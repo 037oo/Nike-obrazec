@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+
+<body>
+    <div id="main">
+        <div id="nav">
+            <div id="nav-prt1">
+                <img src="./assets/pngegg.png" alt="logo">
+                <p>Home</p>
+                <p>Men</p>
+                <p>Women</p>
+                <p>Collection</p>
+                <p>Contact</p>
+            </div>
+            <div id="nav-prt2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="menu" class="fa-solid fa-bars" onclick="menuBar()"></i>
+            </div>
+        </div>
+        <div id="content">
+            <div id="left">
+                <h5>Explore the Limited Edition</h5>
+                <h1>Nike Limited edition</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, magni fuga praesentium assumenda
+                    harum nulla temporibus aspernatur tenetur similique, dolorem animi quam deleniti error provident,
+                    inventore corporis. Iure, iste dicta!</p>
+                <button>Shop now</button>
+            </div>
+            <div id="right">
+                <div class="svgCont">
+                    <span>SVG logo</span>
+                    <svg version="1.0" viewBox="0 0 358.000000 141.000000">
+                        <g transform="translate(0.000000,141.000000) scale(0.100000,-0.100000)" fill="#000000"
+                            stroke="none">
+                            <path d="M535 1238 c-186 -205 -340 -447 -394 -622 -29 -93 -29 -215 0 -292
+                        57 -151 221 -235 430 -220 97 7 252 42 355 81 84 31 2484 1089 2480 1093 -2 1
+                        -534 -142 -1182 -319 -649 -176 -1212 -327 -1252 -335 -220 -42 -388 13 -460
+                        150 -23 44 -26 63 -26 141 0 101 14 159 74 296 21 49 36 89 35 89 -2 0 -29
+                        -28 -60 -62z" />
+                        </g>
+                    </svg>
+                    <a href="..\\nike.svg" download="..\\nike.svg">
+                        <button>Open SVG</button>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="hero">
+            <div class="shoebox">
+                <img src="./assets/nike-just-do-it.jpg" alt="">
+            </div>
+            <div class="shoebox">
+                <img src="./assets/nike-just-do-it (1).jpg" alt="">
+            </div>
+            <div class="shoebox">
+                <img src="./assets/nike-just-do-it (2).jpg" alt="">
+            </div>
+        </div>
+        <footer>
+            <div id="foot1">
+                <div class="footbox">
+                    <h2>FIND A STORE</h2>
+                    <h2>BECOME A MEMBER</h2>
+                    <h2>Send Us Feedback</h2>
+                </div>
+                <div class="footbox">
+                    <h2>HELP</h2>
+                    <p class="footp">Get Help</p>
+                    <p class="footp">Order Status</p>
+                    <p class="footp">Delivery</p>
+                    <p class="footp">Returns</p>
+                    <p class="footp">Payment options</p>
+                    <p class="footp">Contact Us On Nike.com Inquires</p>
+                    <p class="footp">Contact Us All Other Inquiries</p>
+                </div>
+                <div class="footbox">
+                    <h2>COMPANY</h2>
+                    <p class="footp">About Nike</p>
+                    <p class="footp">News</p>
+                    <p class="footp">Careers</p>
+                    <p class="footp">Investors</p>
+                    <p class="footp">Sustainability</p>
+                </div>
+                <div id="footLink">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </footer>
+        <div id="menuDiv">
+            <i class="fa-solid fa-xmark" id="cross" onclick="crossBar()"></i>
+            <div id="menuDiv-box">
+                <p onclick="menuBarClose()">Home</p>
+                <p onclick="menuBarClose()">Men</p>
+                <p onclick="menuBarClose()">Women</p>
+                <p onclick="menuBarClose()">Collection</p>
+                <p onclick="menuBarClose()">Contact</p>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script src="./script.js"></script>
+    <script src="./bezierCurve.js"></script>
+</body>
+
+</html>
