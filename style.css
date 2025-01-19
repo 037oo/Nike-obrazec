@@ -32,17 +32,44 @@ html,body{
     align-items: center;
     justify-content: center;
 }
-#nav-prt1 p{
-    margin-right: 40px;
-    font-size: 1.2vw;
+/*tu je n novu*/
+#nav-prt1 p {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
+    margin-right:40px ;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
+#nav-prt1 p:hover {
+    color: #000000; 
+    transform: scale(1.1); 
+}
+
+#nav-prt1 p:active {
+    color: #000000; 
+    transform: scale(1); 
+}
+/*do tuki*/
+
 #nav-prt2 i{
     margin-right: 40px;
     font-size: 1.5vw;
     cursor: pointer;
+    top: 5%;
+    right: 5%;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
+#nav-prt2 i:hover {
+    color: #000000; 
+    transform: scale(1.1); 
+}
+
+#nav-prt2 i:active {
+    color: #000000; 
+    transform: scale(1); 
+}
+/*do tle*/
 #content{
     width: 100%;
     height: calc(100vh - 110px);
@@ -89,12 +116,13 @@ html,body{
     width: 65%;
     position: relative;
     white-space: nowrap;
-    overflow-x: auto;
+    overflow: hidden;
     border:1px solid;
     display:flex;
     justify-content: center;
     align-items: center;
 }
+
 #right svg{
     height:500px;
     width:500px;
@@ -127,6 +155,55 @@ html,body{
     color:black;
     border:1px black solid;
 }
+#tretja{
+    width: 65%;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    border:1px solid;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#tretja img{
+    height:auto;
+    width:500px;
+    margin-bottom: 100px;
+    margin-top: 25px;
+}
+
+.pngCont{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.pngCont button{
+    width:400px;
+    height:70px;
+    background-color:black;
+    border:none;
+    border-radius:30px;
+    font-size:25px;
+    font-weight: 700;
+    font-family: sans-serif;
+    cursor: pointer;
+    color:white;
+}
+.pngCont span{
+    font-size:64px;
+    font-weight: 1000;
+    font-family: sans-serif;
+}
+.pngCont button:hover{
+    background-color: white;
+    color:black;
+    border:1px black solid;
+}
+/* niam pwjma kj djlm*/
+
 .elem{
     width: 20vw;
     height: 55vh;
@@ -273,7 +350,7 @@ footer{
     color: #ffffff;
 }
 #menuDiv{
-    width: 60%;
+    width: 30%;
     height:100vh;
     position: fixed;
     top: 0;
@@ -282,24 +359,29 @@ footer{
     background-color: #d0d4d545;
     box-shadow: 5px 0px 50px black;
     display: none;
-    animation: menu 0.2s;
+    animation: menu 0.7s;
+    
 }
-#menuDiv-box{
-    width:40%;
+#menuDiv-box {
+    width: 40%;
     height: 70%;
     position: absolute;
     top: 20%;
-    right:15%;
+    left: 10%; 
 }
+
 #menuDiv-box p{
     margin-bottom: 7%;
-    font-size: 22px;
+    font-size: 35px;
     padding: 25px 30px ;
     cursor: pointer;
+    
 }
 #menuDiv-box p:hover{
-    color: #D0D4D5;
-    background-color: #7e7e7e;
+    color: #171717;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    
 }
 #cross{
     position: absolute;
@@ -307,7 +389,18 @@ footer{
     right: 5%;
     font-size: 2.5vw;
     cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; 
 }
+#cross:hover {
+    color: #000000; 
+    transform: scale(1.1); 
+}
+
+#cross:active {
+    color: #000000; 
+    transform: scale(1); 
+}
+
 @keyframes menu{
     from{
         transform: translate(-40%,0%);
@@ -316,6 +409,16 @@ footer{
         transform: translate(0%,0%);
     }
 }
+/*tu je novo*/
+@keyframes menu-close {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/*tu je novo*/
 @media screen and (max-width:999px){
     #nav{
         padding: 0 50px;
@@ -372,6 +475,7 @@ footer{
         border: none;
         cursor: pointer;
     }
+
     #right{
         width: 60%;
         height: 100%;
