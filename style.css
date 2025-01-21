@@ -106,10 +106,9 @@ html,body{
     font-weight: 600;
     padding: 15px 45px;
     border-radius: 50px;
-    border-top-left-radius: 0px;
     text-transform: uppercase;
     outline: none;
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
 }
 #right{
@@ -256,7 +255,7 @@ html,body{
     display: none;
 }
 .shoebox{
-    width: 25vw;
+    width: 100%;
     height: 65vh;
     position: relative;
     box-shadow: 0 5px 10px rgb(0,0,0,0.3);
